@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Framsikt — Snack Counter Automation MVP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Snack Counter Automation</h1>
+      <p class="subtitle">Oslo & Bengaluru Refill Orchestrator, Chat Bot & HR Reimbursement Simulator</p>
+    </div>
+    <button id="resetBtn" class="btn-secondary">Reset Demo</button>
+  </header>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- Management Consolidated Report Banner -->
+  <section class="report-banner" id="managementReport"></section>
+
+  <!-- 3-Column Operational Workspace -->
+  <main class="grid-layout">
+    <!-- Column 1: Offices, Budgets & Hybrid Roster -->
+    <section class="panel">
+      <h2>1. Offices & Hybrid Volunteers</h2>
+      <div id="officesContainer"></div>
+
+      <h3>Volunteer Roster (Click to toggle status)</h3>
+      <p class="hint">Only <strong>IN_OFFICE</strong> volunteers are eligible for rotation.</p>
+      <div id="rosterContainer" class="roster-list"></div>
+    </section>
+
+    <!-- Column 2: Simulated Internal Chat Tool -->
+    <section class="panel">
+      <h2>2. Internal Chat Tool (Bot)</h2>
+      <p class="hint">Automated assignments, concurrency locks & timeout escalations.</p>
+      <div id="activeReceiptForm"></div>
+      <div id="chatFeed" class="chat-feed"></div>
+    </section>
+
+    <!-- Column 3: External HR System & Snack Popularity -->
+    <section class="panel">
+      <h2>3. External HR Reimbursement API</h2>
+      <p class="hint">Claims are created automatically in local payroll currency.</p>
+      <div id="hrClaimsList" class="claims-list"></div>
+
+      <h3>Popular Snacks Logged</h3>
+      <div id="snackStats" class="snack-stats"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "framsikt-app",
+  "version": "1.0.0",
+  "description": "Snack Counter Reimbursement automation application ",
+  "license": "ISC",
+  "author": "Achyuth Mohan",
+  "type": "commonjs",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "node --test backend/core.test.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
